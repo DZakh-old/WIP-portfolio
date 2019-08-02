@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+body {
+	font-family: arial, sans-serif;
+	color: white;
+	background-color:#d34c65;
+	min-height: 100vh;
+	max-height: 100vh;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+body > * {
+	position: absolute;
+	right: 0;
+	left: 0;
+}
+
+h1 {
+	top: 20px;
+}
+h2 {
+	top: 50vh;
+}
+ul {
+	bottom: 30px;
+	display: flex;
+	justify-content: center;
+	list-style: none;	
+}
+li {
+	margin: 0 10px;
+}
+.author {
+	bottom: 10px;
+	font-weight: 100;
+	font-size: 12px;
+}
