@@ -7,6 +7,9 @@ a {
     text-decoration: inherit;
     color: inherit;
 }
+ul a:hover {
+	border-bottom: 1.5px solid white;
+}
 body {
 	font-family: arial, sans-serif;
 	color: white;
@@ -24,13 +27,13 @@ body > * {
 }
 
 h1 {
-	top: 20px;
+	top: 10vh;
 }
 h2 {
 	top: 50vh;
 }
 ul {
-	bottom: 30px;
+	bottom: calc(10vh + 25px);
 	display: flex;
 	justify-content: center;
 	list-style: none;	
@@ -39,7 +42,7 @@ li {
 	margin: 0 10px;
 }
 .author {
-	bottom: 10px;
+	bottom: calc(10vh);
 	font-weight: 100;
 	font-size: 12px;
 }
