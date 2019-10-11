@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+
+
+RewriteCond %{HTTP_HOST} ^dzakh.dev.projects/responsive-practice$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.dzakh.dev/projects/responsive-practice$ 
+RewriteCond %{REQUEST_URI} !projects/responsive-practice/
+RewriteRule (.*) /projects/responsive-practice/$1 [L]
